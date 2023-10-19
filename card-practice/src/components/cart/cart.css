@@ -1,0 +1,33 @@
+.cart--imgContainer{
+    height: 18rem;
+}
+
+.fs-7{
+    font-size: 0.75rem;
+}
+
+.cart-addBtn{
+    background-color: #FF5C3A;
+    color: white;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #FF5C3A;
+    outline: none;
+}
+
+.cart-addBtn:hover , .cart-addBtn:focus{
+    background-color: transparent;
+    border: 1px solid #FF5C3A;
+    color: #FF5C3A;
+}
+
+.cart--tag{
+    background-color: #FF5C3A;
+    right: -1.5rem;
+}
+
+.cart--textnowrap{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
