@@ -27,7 +27,12 @@ const Cart = (props) => {
             </p>
             <div className='d-flex justify-content-between'>
                 <div>
-                    <button className='cart-addBtn rounded d-flex justify-content-center align-itmes-center p-0 fs-3'>+</button>
+                    <button className='cart-addBtn rounded d-flex justify-content-center align-itmes-center p-0 fs-3'
+                        onClick={() => props.setBasketList([...props.basketList , 
+                            {productName : props.productName , 
+                                productId : props.productId ,
+                                productPrice : props.productPrice}])}
+                    >+</button>
                 </div>
                 <div>
                     <h3>

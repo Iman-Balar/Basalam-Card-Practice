@@ -1,0 +1,24 @@
+.basket--container{
+    min-height: 100vh;
+}
+
+.basket--itemList{
+    min-height: 75vh;
+}
+
+.cart--textnowrap{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buyBtn{
+    background-color: #FF5C3A;
+    border: 1px solid #FF5C3A;;
+}
+
+.buyBtn:hover , .buyBtn:focus {
+    background-color: #FF5C3A;
+    border: 1px solid #FF5C3A;
+    color: white;
+}
