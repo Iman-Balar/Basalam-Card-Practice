@@ -2,7 +2,7 @@ import Cart from '../../components/cart/Cart';
 import './homePage.css';
 import { useState , useEffect } from 'react';
 import axios from 'axios';
-import Basket from '../../components/basket/basket';
+import Basket from '../../components/basket/Basket';
 
 const HomePage = () => {
 
@@ -19,19 +19,19 @@ const HomePage = () => {
     },[])
 
     return (
-        <div dir="rtl" className="bg-light d-flex gap-1">
+        <header dir="rtl" className="bg-light d-flex gap-1">
             {console.log(basketList)}
-            <div className='w-25 h-100'>
+            <section className='w-25 h-100'>
                 <Basket
                     basketList = {basketList}
                     setBasketList = {setBasketList}
                 />
-            </div>
+            </section>
 
-            <div className='w-75 h-100  d-flex gap-2 flex-wrap justify-content-center align-items-center'>
+            <main className='w-75 h-100  d-flex gap-2 flex-wrap justify-content-center align-items-center'>
             {productList.map(item => {
                 return (
-                    <div key={`productList-${item.id}`} className="home--cartContainer">
+                    <detail key={`productList-${item.id}`} className="home--cartContainer">
                         <Cart 
                             productId = {item.id}
                             productName = {item.title}
@@ -44,11 +44,11 @@ const HomePage = () => {
                             basketList = {basketList}
                             setBasketList = {setBasketList}
                         />
-                    </div>
+                    </detail>
                 )
             })}
-            </div>
-        </div>
+            </main>
+        </header>
     )
 }
 
